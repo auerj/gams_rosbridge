@@ -6,7 +6,7 @@ To setup Madara and Gams execute the following code
 ```bash
 git clone git@github.com:auerj/gams_rosbridge.git
 cd gams_rosbridge
-./build_gams.sh/
+./build_gams.sh
 ```
 Build the bridge
 ```bash
