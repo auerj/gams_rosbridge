@@ -1,0 +1,11 @@
+export WORKING_DIR=`pwd`
+export GAMS_ROOT=$WORKING_DIR/gams
+export MADARA_ROOT=$WORKING_DIR/madara
+export CORES=`cat /proc/cpuinfo | awk '/^processor/{print $3}' | wc -l`
+
+
+export MPC_ROOT=$GAMS_ROOT/MPC
+export EIGEN_ROOT=$GAMS_ROOT/eigen
+export CAPNP_ROOT=$GAMS_ROOT/capnproto
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MADARA_ROOT/lib:$GAMS_ROOT/lib:$VREP_ROOT:$CAPNP_ROOT/c++/.libs
+export PATH=$PATH:$MPC_ROOT:$VREP_ROOT:$CAPNP_ROOT/c++
